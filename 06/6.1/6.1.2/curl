@@ -1,0 +1,9 @@
+curl https://api.openai.com/v1/chat/completions \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer <OpenAI API Key>" \
+  -d '{
+     "model": "gpt-4o-mini",
+     "messages": [{"role": "user", "content": "こんにちは"}],
+     "temperature": 0.7,
+     "n": 1
+   }'

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>資産検索画面</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="mb-4">資産検索</h2>
+        <form method="GET" action="search_results.php">
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <input type="text" class="form-control" name="asset_id" placeholder="資産ID">
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" name="asset_name" placeholder="資産名">
+                </div>
+                <div class="col-md-4">
+                    <select class="form-control" name="asset_type">
+                        <option value="">資産種別を選択</option>
+                        <option value="type1">種別1</option>
+                        <option value="type2">種別2</option>
+                        <option value="type3">種別3</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">検索</button>
+        </form>
+
+        <h3 class="mt-5 mb-4">検索結果</h3>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>資産ID</th>
+                    <th>資産名</th>
+                    <th>資産種類</th>
+                    <th>資産状態</th>
+                    <th>保管場所</th>
+                    <th>貸出状況</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>資産A</td>
+                    <td>種別1</td>
+                    <td>良好</td>
+                    <td>倉庫1</td>
+                    <td>貸出中</td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>資産B</td>
+                    <td>種別2</td>
+                    <td>未使用</td>
+                    <td>倉庫2</td>
+                    <td>利用可能</td>
+                </tr>
+                <!-- 追加の資産情報をここに記述 -->
+            </tbody>
+        </table>
+
+        <!-- 必要に応じてページネーション -->
+        <nav aria-label="Page navigation">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">前へ</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">次へ</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
