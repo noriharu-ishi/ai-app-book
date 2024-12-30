@@ -141,10 +141,9 @@
 技術書『[生成 AI アプリケーション開発入門](https://www.amazon.co.jp/gp/product/4991400805)』は以下から購入できます：
 
 - [Amazon](https://www.amazon.co.jp/gp/product/4991400805)
-- 楽天（処理中）
+- [楽天ブックス](https://books.rakuten.co.jp/rb/18100379)
+- [丸善ジュンク堂書店](https://www.maruzenjunkudo.co.jp/products/9784991400803)
 - 三省堂（処理中）
-- 丸善ジュンク堂書店（処理中）
-
 
 
 ## 貢献
